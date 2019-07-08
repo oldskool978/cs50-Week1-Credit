@@ -32,13 +32,13 @@ void main(void)
 
 Luhn's algorithm is a checksum applied to Credit Card numbers for added security. The algorithm multiplies every second number by two, starting from the end. Any sum that is greater than 10 is added together (ie. 8 * 2 = 18, so 18 would become 1 + 8). Every number that hasn't been multiplied by 2 then gets added to the sum. Once luhns algorithm is executed and a checksum is obtained, the value can then be validated. Commonly the checksum is validated by checking that the resulting value is divisible by 10. 
 
-------------
-
 
 The LuHn(char*) Function accepts a Character array that is 20 digits long, That is 19 numbers and a terminator value. The function returns an int that is equivalent to the checksum amount. 
 
-**  example:**
+------------
+
 ```c
+example:
 void main(void) 
 { 
   Get_NuMber();
@@ -58,10 +58,10 @@ void main(void)
 
 ------------
 
-
-**  example:**
-void main(void)
 ```c
+example
+void main(void)
+
 { 
   Get_NuMber();
   printf ("%s", isitValid(NuMber));
@@ -70,11 +70,12 @@ void main(void)
 ```
 
 *  When executed, the code above is all that's necessary to fulfill every requirement set by cs50's week1 problem set. Any number too big or small to be valid is rejected. Internally the function multiplies the numeric value of pointer[0] by 10 and adds the value of pointer[1]. The result will be equivalent to the first two digits of the array.
+<p align="right"> 
 
 >  <b> (ie. if NuMber = 36~~59848565867~~ then (((NuMber[0] -'0') * 10) + (NuMber[1] - '0')) == 36)<br></b>
 >  <b> (ie. if NuMBer = 53~~26985477552~~ then (((NuMber[0] -'0') * 10) + (NuMber[1] - '0')) == 53)<br></b>
 >  <b> (ie. if NuMBer = 71~~12682439112~~ then (((NuMber[0] -'0') * 10) + (NuMber[1] - '0')) == 71)<br></b>
-
+</p><i>
 This function follows a switch loop with an if statement,  if ((LuHn(NuMber) % 10) == 0)  switch to corresponding credit card provider.  The return of this function is a string type.  Switch defaults to returning "INVALID\n". "INVALID\n" is returned unless every requirement is fulfilled. 
 
 
