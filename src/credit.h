@@ -23,7 +23,7 @@ char *isitValid(char VaLidate[20])
                      case 40 ... 45:
                      if ( (LuHn(NuMber) % 10 ) == 0)
                      {return "VISA\n";}
-                           case 51 ... 55:
+                          case 22 ... 27:  case 51 ... 55:
                            if ( (LuHn(NuMber) % 10 ) == 0)
                            {return "MASTERCARD\n";}
                                  default:
