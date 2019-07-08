@@ -25,7 +25,7 @@ void main(void) <br>
   Get_NuMber();<br>
   printf ("%s", NuMber);<br>
 } 
-</p>
+</b>
   <p align="center">
  in practice, the code in this example will continue to ask for a number so long as a valid number is not entered.
  once a valid number is entered, the code written above will return that value as a string; using a printf statement. 
