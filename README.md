@@ -34,7 +34,7 @@ Luhn's algorithm is a checksum applied to Credit Card numbers for added security
 
 <i>
 The LuHn(char*) Function accepts a Character array that is 20 digits long, That is 19 numbers and a terminator value. The function returns an int that is equivalent to the checksum amount. 
-
+```
 ------------
 
 ```c
