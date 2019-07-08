@@ -6,14 +6,14 @@
 
 int Last_Digit(int LDigit);
 int LuHn(char CreD[20]);
-char *isitValid(char VaLidate[17]);
+char *isitValid(char VaLidate[20]);
 char *LDBuffer;
 char *NuMber;
 void Get_NuMber(void);
 
 
 //Function to check for Amex Visa or Mastercard
-char *isitValid(char VaLidate[17])
+char *isitValid(char VaLidate[20])
 {
   if ( (strlen(VaLidate) == 14 ) | !(strlen(VaLidate) > 12) | (strlen(VaLidate) > 16 ))
   { return "INVALID\n"; exit(0);}
