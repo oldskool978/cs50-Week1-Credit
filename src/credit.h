@@ -4,10 +4,8 @@
 #include<string.h>
 #include<ctype.h>
 
-int Last_Digit(int LDigit);
 int LuHn(char CreD[20]);
 char *isitValid(char VaLidate[20]);
-char *LDBuffer;
 char *NuMber;
 void Get_NuMber(void);
 
@@ -20,13 +18,13 @@ char *isitValid(char VaLidate[20])
          switch((((VaLidate[0] -'0') * 10) + (VaLidate[1] - '0')))
          {
                case 34: case 37:
-               if (Last_Digit(LuHn(VaLidate)) == 0)
+               if ( (LuHn(NuMber) % 10 ) == 0)
                {return "AMEX\n";}
                      case 40 ... 45:
-                     if (Last_Digit(LuHn(VaLidate)) == 0)
+                     if ( (LuHn(NuMber) % 10 ) == 0)
                      {return "VISA\n";}
                            case 51 ... 55:
-                           if (Last_Digit(LuHn(VaLidate)) == 0)
+                           if ( (LuHn(NuMber) % 10 ) == 0)
                            {return "MASTERCARD\n";}
                                  default:
                                  return "INVALID\n";
@@ -42,6 +40,7 @@ void Get_NuMber(void)
     {
     free(NuMber);
     NuMber = (char*)malloc(16);
+    printf ("Number: ");
     scanf("%s", &NuMber[0]);
     getchar();
     }
@@ -67,16 +66,4 @@ int LuHn(char CreD[20])
          for (int HNum = strlen(CreD) ; HNum > 0; HNum = HNum -2 )
          {SoLvE = SoLvE + (CreD[HNum -1] - '0');}
   return SoLvE;
-}
-
-
-
-//Gets Last Digit of an int, returns it as int
-int Last_Digit(int LDigit)
-{
-  free(LDBuffer);
-  LDBuffer = (char*)malloc(8);
-  sprintf( LDBuffer, "%i", LDigit);
-  return LDBuffer[(strlen(LDBuffer) -1)] - '0';
-  free(LDBuffer);
 }
