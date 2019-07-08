@@ -13,7 +13,7 @@ using a for loop and isdigit(), this function queries the user for a positive nu
 Anything that isnt positive number without spaces is rejected.
 user is demanded input until one is supplied. 
 the number supplied is stored in character array NuMber. 
-NuMber uses malloc to allocate memory dynamicly. 
+NuMber uses malloc to allocate memory dynamically. 
 NuMber is released from memory every time this function is called. 
 it can be used many times over with little worry of memory allocation and overflows.
 
@@ -68,7 +68,7 @@ void main(void) <br>
 } 
   </p>
   <p align="center">
-  The code above prints out the final digit from the result of feeding NuMbers into the Luhn's algorithm. LuHn returns an int, which is what Last_Digit calls for. Natural, you can use the function in line as shown above. if LuHn returns a 73, the result of this printf statement would be a 3. if LuHn returns 142, the printf statement would result in 2. 
+  The code above prints out the final digit from the result of feeding NuMbers into the Luhn's algorithm. LuHn returns an int, which is what Last_Digit calls for. Naturaly, you can use the function in line as shown above. if LuHn returns a 73, the result of this printf statement would be a 3. if LuHn returns 142, the printf statement would result in 2. 
   
   This function could be used to validate Luhn's algorithm. While it is common for the Luhn's checksum to be validated by checking that the resulting value is divisible by 10, I chose to check if the final digit was zero, since all multiples of 10 end in 0.
   </p>
