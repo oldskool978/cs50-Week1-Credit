@@ -54,27 +54,6 @@ void main(void) <br>
  </b>
 
 
-# int Last_Digit(int i)
-
-The Last_Digit function extracts the final digit of whatever number you feed to it. Internally, the function casts an int type to a character array. Though this function is of an int type, internally the function builds a char array and stores the int value to dynamic memory. Once the numbers are cast to a char* the final digit is aquired with the use of *arr[(strlent(Char*) - 1) - '0']. Subtracting '0' from a Char pointer converts the pointer to an absolute value. (ie. NuMbers[(strlent(NuMbers) - 1) - '0'] would refer to the last digit in a character array represented as a true digit, rather its ascii value.
-
-  <b>
-  example:
- <br>
-void main(void) <br>
-{ <br>
-  Get_NuMber();<br>
-  printf ("%i", Last_Digit(LuHn(NuMber));<br>
-} 
-  </p>
-  <p align="center">
-  The code above prints out the final digit from the result of feeding NuMbers into the Luhn's algorithm. LuHn returns an int, which is what Last_Digit calls for. Naturaly, you can use the function in line as shown above. If LuHn returns a 73, the result of this printf statement would be a 3. if LuHn returns 142, the printf statement would result in 2. 
-  
-  This function could be used to validate Luhn's algorithm. While it is common for the Luhn's checksum to be validated by checking that the resulting value is divisible by 10, I chose to check if the final digit was zero, since all multiples of 10 end in 0.
-  </p>
-   </b>
-  
-
 # char *isitValid(char* ) 
 
  isitValid is a character array that accepts a character array. This function acts as a gatekeeper, returning a string value reflecting the type of creditcard validated. This function is tailored to carry out the objectives set by Harvard cs50's 2019 Week 1 problem set. The function invalidates any char array with less than 12 digits, exactly 14 digits, or anything over 17 digits. Once those conditions are met, a switch loop executes using the first two digits of the credit card number as as well as luhn's algorithm; as a means to validate the card issuer.
@@ -95,7 +74,7 @@ void main(void) <br>
  (ie. if NuMBer = 5326985477552 then (((NuMber[0] -'0') * 10) + (NuMber[1] - '0')) == 53)<br>
  (ie. if NuMBer = 7112682439112 then (((NuMber[0] -'0') * 10) + (NuMber[1] - '0')) == 71)<br>
  
- this function follows the switch loop with an if statement, that is; if (Last_Digit(LuHn(NuMber)) == 0 )
+ this function follows the switch loop with an if statement, that is; if ((LuHn(NuMber) % 10) == 0)
  In the event that the if statement is true, the card corresponding issuer is returned as a string. 
  Switch defaults to returning "INVALID\n".  INVALID is returned unless every requirement is fulfilled.  
  </p>
