@@ -3,7 +3,6 @@
 
 int main(void)
 {
-  printf ("Number: ");
   Get_NuMber();
   printf ("%s", isitValid(NuMber));
   free(NuMber);
