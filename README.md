@@ -2,7 +2,7 @@
 Harvard cs50 Week 1, Credit Challenge. Portable (no use of cs50.h) 
 
 # library Credit.H 
-I have included a self contained library, it allows several functions that are useful and necessary for evaluating user input.
+I have included a self contained library that allows for several functions that are imperative to evaluating user input.
  <br>
 
 ## void Get_NuMber(void)
