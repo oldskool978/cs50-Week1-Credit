@@ -39,7 +39,7 @@ void Get_NuMber(void)
     do
     {
     free(NuMber);
-    NuMber = (char*)malloc(16);
+    NuMber = (char*)malloc(20);
     printf ("Number: ");
     scanf("%s", &NuMber[0]);
     getchar();
