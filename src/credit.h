@@ -5,7 +5,7 @@
 #include<ctype.h>
 
 int Last_Digit(int LDigit);
-int LuHn(char CreD[17]);
+int LuHn(char CreD[20]);
 char *isitValid(char VaLidate[17]);
 char *LDBuffer;
 char *NuMber;
@@ -53,7 +53,7 @@ void Get_NuMber(void)
 
 
 //Luhns algorythm, Accepts Char arr returns int
-int LuHn(char CreD[17])
+int LuHn(char CreD[20])
 {
   int SoLvE = 0;
   char DiGit2[3];
