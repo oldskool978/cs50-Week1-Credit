@@ -9,9 +9,9 @@ I have included a self contained library, it allows several functions that are u
 
 Something like cs50's Get_Long.. but its not.
 it does not allow for a string output like get_long does.  
-Using a for loop and isdigit(), this function queries the user for a positive number.
-Anything that isnt positive number without spaces is rejected.
-user is demanded input until one is supplied. 
+Using a for loop, isdigit(), and isspace(); this function queries the user for a positive number.
+Anything that isnt a solid number is rejected.
+user is demanded input until a string of numbers is entered. 
 The number supplied is stored in character array NuMber. 
 NuMber uses malloc to allocate memory dynamically. 
 NuMber is released from memory every time this function is called. 
