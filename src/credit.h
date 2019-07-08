@@ -36,18 +36,14 @@ char *isitValid(char VaLidate[20])
 //Function to get NuMber, only digits.
 void Get_NuMber(void)
 {
-    do
-    {
     free(NuMber);
     NuMber = (char*)malloc(20);
     printf ("Number: ");
-    scanf("%s", &NuMber[0]);
+    scanf("%[^\n]", &NuMber[0]);
     getchar();
-    }
-    while ( NuMber < 0 );
-    for (int CNum = 0 ; CNum < strlen(NuMber) ; CNum++ )
-        { if (isdigit(NuMber[CNum]) == 0)
-        { Get_NuMber();}}
+    for (int ANum = 0 ; ANum < strlen(NuMber) ; ANum++ )
+        {if ( isdigit(NuMber[ANum]) == 0 || isspace(NuMber[ANum]) >= 1)
+        {Get_NuMber();}}
 }
 
 
