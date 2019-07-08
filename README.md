@@ -72,11 +72,10 @@ void main(void)
 ```
 
 *  When executed, the code above is all that's necessary to fulfill every requirement set by cs50's week1 problem set. Any number too big or small to be valid is rejected. Internally the function multiplies the numeric value of pointer[0] by 10 and adds the value of pointer[1]. The result will be equivalent to the first two digits of the array.
-<p align="right"> 
 
 >  <b> (ie. if NuMber = 36~~59848565867~~ then (((NuMber[0] -'0') * 10) + (NuMber[1] - '0')) == 36)<br></b>
 >  <b> (ie. if NuMBer = 53~~26985477552~~ then (((NuMber[0] -'0') * 10) + (NuMber[1] - '0')) == 53)<br></b>
 >  <b> (ie. if NuMBer = 71~~12682439112~~ then (((NuMber[0] -'0') * 10) + (NuMber[1] - '0')) == 71)<br></b>
-</p> </p>
-This function follows a switch loop with an if statement,  if ((LuHn(NuMber) % 10) == 0)) switch to corresponding credit card provider. The return of this function is a string type. Switch defaults to returning "INVALID\n". "INVALID\n" is returned unless every requirement is fulfilled. 
+
+This function follows a switch loop with an if statement,  ` if ((LuHn(NuMber) % 10) == 0)) `switch to corresponding credit card provider. The return of this function is a string type. Switch defaults to returning "INVALID\n". "INVALID\n" is returned unless every requirement is fulfilled. 
 
