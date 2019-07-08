@@ -1,9 +1,8 @@
-
-###  cs50-Week1-Credit 
+<p align="right"> 
 Harvard cs50 Week 1, Credit Challenge. Portable (no use of cs50.h) 
 
 
-# | library Credit.H | 
+# | library Credit.H |
 I have included a self contained library that encapsulate several functions that assist in evaluating user input.
  <br>
 
@@ -78,4 +77,4 @@ void main(void)
 
 This function follows a switch loop with an if statement,  if ((LuHn(NuMber) % 10) == 0)  switch to corresponding credit card provider.  The return of this function is a string type.  Switch defaults to returning "INVALID\n". "INVALID\n" is returned unless every requirement is fulfilled. 
 
- 
+
