@@ -16,20 +16,18 @@ char *isitValid(char VaLidate[20])
   if ( (strlen(VaLidate) == 14 ) | !(strlen(VaLidate) > 12) | (strlen(VaLidate) > 16 ))
   { return "INVALID\n"; exit(0);}
          switch((((VaLidate[0] -'0') * 10) + (VaLidate[1] - '0')))
-         {
-               case 34: case 37:
-               if ( (LuHn(NuMber) % 10 ) == 0)
-               {return "AMEX\n";}
+         {case 34: case 37:
+              if ( (LuHn(NuMber) % 10 ) == 0)
+              {return "AMEX\n";}
                      case 40 ... 45:
                      if ( (LuHn(NuMber) % 10 ) == 0)
                      {return "VISA\n";}
                           case 22 ... 27:  case 51 ... 55:
-                           if ( (LuHn(NuMber) % 10 ) == 0)
-                           {return "MASTERCARD\n";}
+                          if ( (LuHn(NuMber) % 10 ) == 0)
+                          {return "MASTERCARD\n";}
                                  default:
-                                 return "INVALID\n";
-  }
-  return "INVALID\n";
+                                 return "INVALID\n";}
+return "INVALID\n";
 }
 
 
