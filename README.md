@@ -32,7 +32,7 @@ void main(void)
 
 Luhn's algorithm is a checksum applied to Credit Card numbers for added security. The algorithm multiplies every second number by two, starting from the end. Any sum that is greater than 10 is added together (ie. 8 * 2 = 18, so 18 would become 1 + 8). Every number that hasn't been multiplied by 2 then gets added to the sum. Once luhns algorithm is executed and a checksum is obtained, the value can then be validated. Commonly the checksum is validated by checking that the resulting value is divisible by 10. 
 
-
+<i>
 The LuHn(char*) Function accepts a Character array that is 20 digits long, That is 19 numbers and a terminator value. The function returns an int that is equivalent to the checksum amount. 
 
 ------------
