@@ -2,7 +2,7 @@
 Harvard cs50 Week 1, Credit Challenge. Portable (no use of cs50.h) 
 
 
-# | library Credit.H |
+# library Credit.H
 I have included a self contained library that encapsulates several functions to assist in evaluating user input.
  <br>
 
