@@ -14,7 +14,9 @@ Something like cs50's Get_Long.. but its not. it does not allow for a string out
 
 
 ```c
-example:
+#include"credit.h"
+
+//example:
 void main(void) 
 { 
   Get_NuMber();
@@ -40,7 +42,9 @@ Luhn's algorithm is a checksum applied to Credit Card numbers for added security
 
 
 ```c
-example:
+#include"credit.h"
+
+//example:
 void main(void) 
 { 
   Get_NuMber();
@@ -61,7 +65,9 @@ void main(void)
 ------------
 
 ```c
-example
+#include"credit.h"
+
+//example
 void main(void)
 
 { 
