@@ -56,8 +56,8 @@ int LuHn(char CreD[20])
   int DiGit1 = strlen(DiGit2);
      if ( DiGit1 >= 2)
      {SoLvE = SoLvE + ((DiGit2[0] -'0') + (DiGit2[1] - '0'));}
-     else {SoLvE = SoLvE + (DiGit2[0] -'0');}}
+     else {SoLvE += (DiGit2[0] -'0');}}
          for (int HNum = strlen(CreD) ; HNum > 0; HNum = HNum -2 )
-         {SoLvE = SoLvE + (CreD[HNum -1] - '0');}
+         {SoLvE += (CreD[HNum -1] - '0');}
   return SoLvE;
 }
